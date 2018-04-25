@@ -1,20 +1,13 @@
 let id = 0;
 
-export const addToList = text => ({
-	type: "ADD_ITEM",
-	id: id++,
-	text
-})
+export const UserActions = {
+	ADD_ITEM: 'ADD_ITEM',
+	TOGGLE_ITEM: 'TOGGLE_ITEM'
+}
 
-export const toggleItem = id => ({
-	type: "TOGGLE_ITEM",
-	id
-})
-
-export const setFilter = filter => ({
-	type: "SET_FILTER",
-	filter
-})
+export const FilterActions = {
+	SET_FILTER: 'SET_FILTER'
+}
 
 export const Filters = {
 	SHOW_ALL: 'SHOW_ALL',
@@ -22,7 +15,18 @@ export const Filters = {
 	SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
 
-export const UserActions = {
-	ADD_ITEM: 'ADD_ITEM',
-	TOGGLE_ITEM: 'TOGGLE_ITEM'
-}
+export const addToList = text => ({
+	type: UserActions.ADD_ITEM,
+	id: id++,
+	text
+})
+
+export const toggleItem = id => ({
+	type: UserActions.TOGGLE_ITEM,
+	id
+})
+
+export const setFilter = filter => ({
+	type: FilterActions.SET_FILTER,
+	filter
+})

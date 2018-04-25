@@ -1,8 +1,8 @@
-import { Filters } from '../actions';
+import { Filters, FilterActions } from '../actions';
 
 const filter = (state = Filters.SHOW_ALL, action) => {
 	switch (action.type) {
-		case 'SET_FILTER':
+		case FilterActions.SET_FILTER:
 			return action.filter;
 		default:
 			return state;

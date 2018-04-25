@@ -1,6 +1,6 @@
 import React from 'react';
 import { Filters } from '../actions';
-import FilterLink from '../containers/FilterLink';
+import FilterLink from '../containers/FilterButton';
 
 function Footer () {
 
