@@ -1,14 +1,14 @@
 import React from 'react';
 import { Filters } from '../actions';
-import FilterLink from '../containers/FilterButton';
+import FilterButton from '../containers/FilterButton';
 
 function Footer () {
 
 	return (
 		<div>		
-			<FilterLink filter={Filters.SHOW_ALL} > Show All </FilterLink>
-			<FilterLink filter={Filters.SHOW_COMPLETED} > Show Completed </FilterLink>
-			<FilterLink filter={Filters.SHOW_ACTIVE} > Show Active </FilterLink>
+			<FilterButton filter={Filters.SHOW_ALL} > Show All </FilterButton>
+			<FilterButton filter={Filters.SHOW_COMPLETED} > Show Completed </FilterButton>
+			<FilterButton filter={Filters.SHOW_ACTIVE} > Show Active </FilterButton>
 		</div>
 		)
 }
